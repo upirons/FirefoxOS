@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<!-- Práctica 2.4 Módulo 2: Maquetar con estilos. Autor: Luis Medina. Fichero: html -->
+<head>
+	<meta charset="UTF-8">
+	<title>Maquetar en HTML</title>
+	<!-- Incluimos estilos en el mismo fichero -->
+	<style>
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #F4F4B4; /* Color de fondo. Aplica a todo el body */
+			font-family: Arial, Helvetica, sans-serif; /* Familia tipográfica */
+			line-height: 1.5em;
+			margin: 0 15%;
+		}
+
+		h1 {
+			color: #100995; /* Color de la fuente. En formato hexadecimal sería: color: #1B3FAC;*/
+			font-stretch: expanded; /* Esta propiedad no funciona en muchos navegadores */
+		}
+
+		sup {
+			font-size: 60%; /* Para que no afecte a la separación entre líneas */
+			font-weight: bold;
+		}
+
+		sub {
+			font-size: 80%; /* Para que no afecte a la separación entre líneas */
+			font-weight: bold;
+		}
+
+		ul {
+			list-style-type: square; /* Cambiando el icono por un cuadrado */
+		}
+
+		li {
+			font-style: oblique;
+			font-weight: bold;
+		}
+		
+		blockquote {
+			font-style: italic;
+			font-family: "Times New Roman", Times, serif;
+			line-height: 1.3em;
+		}
+
+		#intro, #intro acronym {
+			font-variant: small-caps;
+			font-size: 90%;
+		}
+
+		#main {
+			padding: 1em 5%;
+			background-color: #FFCC66;
+		}
+
+		#noCita {
+			font-family: Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-size: 0.9em;
+		}
+
+		#site {
+			font-weight: 600;
+			font-size: 85%;
+			line-height: 300%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		 <h1>
+		 	<em><dfn title='Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. Tiene como misión "mantener la elección y la innovación en Internet". La fundación es conocida por crear el navegador Mozilla Firefox.'>Mozilla</dfn> anuncia la expansión global de Firefox <acronym title="Operating System">OS</acronym></em>
+	 	</h1>
+
+		<p id="intro">
+			<strong>Dieciocho grandes operadoras reciben la iniciativa de dispositivos <a href="http://www.w3.org/wiki/Open_Web_Platform" target="_blank"><dfn title="La Web Abierta es a la vez un conjunto de filosofías y la plataforma de tecnologías abiertas (no pagan royalties por licencia) que han permitido el amplio y rápido desarrollo de la Web en los últimos años, y es producto del trabajo colaborativo de excelentes profesionales de la comunidad de desarrollo mundial.">Open Web</dfn></a> y anuncian los primeros mercados donde se lanzarán. Los primeros dispositivos serán de <a href="http://www.alcatelonetouch.com/es/" target="_blank" >Alcatel One Touch</a>, <acronym title="Life's Good"><a href="http://www.lg.com/es/smartphones" target="_blank">LG</a></acronym> y <a href="http://wwwen.zte.com.cn/en/" target="_blank"><acronym title="Zhongxing Telecommunication Equipment">ZTE</acronym></a>, a los cuales seguirá <a href="http://www.huawei.com/es/" target="_blank">Huawei</a>. La primera ola de dispositivos Firefox <acronym title="Operating System">OS</acronym> estará disponible para los consumidores de Brasil, Colombia, Hungría, México, Montenegro, Polonia, Serbia, España y Venezuela. Próximamente se anunciarán nuevos mercados.</strong>
+		</p>
+
+		<p>
+			<span id="site"><em>BARCELONA</em>, España– <strong><a href="http://www.mobileworldcongress.com/" target="_blank">Mobile World Congress</a></strong> –24 de febrero de 2013, 18:05 PM-</span>
+			<br>
+			<dfn title='Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. Tiene como misión "mantener la elección y la innovación en Internet". La fundación es conocida por crear el navegador Mozilla Firefox.'>Mozilla</dfn> ha presentado hoy la primera versión comercial de su ecosistema móvil abierto <strong>Firefox <acronym title="Operating System">OS</acronym></strong> y ha anunciado los planes de lanzamiento por parte de otras operadoras, durante una conferencia de prensa previa al inicio del <em>Mobile World Congress</em> en Barcelona.
+		</p>
+
+		<p>
+			Hasta la fecha, 17 importantes operadoras de todo el mundo se han comprometido con la iniciativa de dispositivos <dfn title="La Web Abierta es a la vez un conjunto de filosofías y la plataforma de tecnologías abiertas (no pagan royalties por licencia) que han permitido el amplio y rápido desarrollo de la Web en los últimos años, y es producto del trabajo colaborativo de excelentes profesionales de la comunidad de desarrollo mundial.">Open Web</dfn>:
+		</p>
+
+		<ul>
+		    <li>América Móvil,</li>
+		    <li>China Unicom,</li>
+		    <li>Deutsche Telekom,</li>
+		    <li>Etisalat,</li>
+		    <li>Hutchison Three Group,</li>
+		    <li><acronym title="Merger of DDI, KDD and IDO">KDDI</acronym>, <acronym title="Korea Telecom">KT</acronym>,</li>
+		    <li>MegaFon,</li>
+		    <li>Qtel, SingTel, Smart,</li>
+		    <li>Sprint,</li>
+		    <li>Telecom Italia Group,</li>
+		    <li>Telefónica,</li>
+		    <li>Telenor,</li>
+		    <li><acronym title="Telecomunicações Móveis Nacionais, S.A.">TMN</acronym> y</li>
+		    <li>VimpelCom.</li>
+		</ul>
+
+		<p>
+			<a href="http://www.telstra.com.au/" target="_blank">Telstra</a> ha acogido la iniciativa de <dfn title='Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. Tiene como misión "mantener la elección y la innovación en Internet". La fundación es conocida por crear el navegador Mozilla Firefox.'>Mozilla</dfn> como una oportunidad de ofrecer a sus clientes una innovadora experiencia de Web móvil. El amplio número de operadoras que respaldan el sistema operativo de <dfn title='Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. Tiene como misión "mantener la elección y la innovación en Internet". La fundación es conocida por crear el navegador Mozilla Firefox.'>Mozilla</dfn>, <strong>Firefox <acronym title="Operating System">OS</acronym></strong>, demuestra el sólido apoyo del sector hacia una plataforma móvil sin restricciones y completamente flexible.
+		</p>
+
+		<p>
+			El teléfono <a href="http://www.geeksphone.com/es/" target="_blank">Geeksphone</a> es muy ligero, bastante más que el Galaxy S3, manteniendo una pantalla muy similar, le acompaña una batería de 1800 * 10<sup>-3</sup> <dfn title="Amperio-hora">Ah</dfn> que me ha dado una autonomía de más de dos días continuamente encendido, sin datos móviles pero usando <abbr title="Wireless Fidelity (Fidelidad inalámbrica)">Wifi</abbr>.
+		</p>
+
+		<p>
+			Los <dfn title="Un teléfono inteligente (smartphone en inglés) es un teléfono móvil construido sobre una plataforma informática móvil, con una mayor capacidad de almacenar datos y realizar actividades semejantes a una minicomputadora y conectividad que un teléfono móvil convencional. El término «inteligente» hace referencia a la capacidad de usarse como un ordenador de bolsillo, llegando incluso a reemplazar a un ordenador personal en algunos casos.">smartphones</dfn> <strong>Firefox <acronym title="Operating System">OS</acronym></strong> son los primeros que están desarrollados en su totalidad de acuerdo con los estándares Web abiertos, permitiendo que cada función pueda ser desarrollada como una aplicación <strong>HTML<sub>5</sub></strong>. Las aplicaciones Web tienen acceso a cualquier habilidad subyacente del dispositivo, evitando de este modo los típicos obstáculos del <strong>HTML<sub>5</sub></strong> en dispositivos móviles para ofrecer así un rendimiento notable. La flexibilidad de la plataforma permite a las operadoras diseñar fácilmente la interfaz, así como desarrollar servicios locales que respondan a las necesidades particulares de su base de clientes.
+		</p>
+
+		<p>
+			Los consumidores disfrutarán de una experiencia smartphone dinámica, rica y abierta, que proporciona fácil acceso a todo lo que les gusta de la Web, incluyendo la integración de <em>Facebook</em> y <em>Twitter</em>, a través de una interfaz sencilla y rápida, y de controles de costes integrados.
+		</p>
+
+		<p>
+			<blockquote cite="http://blog.mozilla.org/press-latam/2013/02/24/mozilla-anuncia-la-expansion-global-de-firefox-os/">“<strong>Firefox <acronym title="Operating System">OS</acronym></strong> ofrece la libertad e innovación ilimitada de la Web abierta a los usuarios móviles de cualquier parte del mundo”<span id="noCita">, según indica Gary Kovacs, <acronym title="Chief Executive Officer">CEO</acronym> de <dfn title='Mozilla Foundation es una organización sin ánimo de lucro dedicada a la creación de software libre. Tiene como misión "mantener la elección y la innovación en Internet". La fundación es conocida por crear el navegador Mozilla Firefox.'>Mozilla</dfn>.</span> “Con el apoyo de nuestra dinámica comunidad y de nuestros partners, nuestro objetivo es facilitar el camino para dar paso a una explosión de contenidos y servicios que solucionen las diversas necesidades de los próximos 2.000 millones de usuarios online”.</blockquote>
+		</p>
+	</div>
+</body>
+</html>
