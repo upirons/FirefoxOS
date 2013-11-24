@@ -1,9 +1,0 @@
-/*-- Práctica 2 Módulo 1. Autor: Luis Medina. Fichero: css */
-/* Fichero: Hoja de estilos */
-
-body {
-	background-color: #FFCC66; /* Color de fondo. Aplica a todo el body */
-	color: rgb(27,63,172); /* Color de la fuente. En formato hexadecimal sería: color: #1B3FAC;*/
-	font-family: Tahoma, Geneva, sans-serif; /* Familia tipográfica, con varias para cubrirse ante la falta de una */
-	font-size: 2em; /* Tamaño en medida em*/
-}
