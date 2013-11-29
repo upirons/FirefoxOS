@@ -1,0 +1,58 @@
+/*-- Práctica 1 Módulo 3: Incluir fonts locales y embebidas. Autor: Luis Medina. Fichero: css */
+/* Fichero: Hoja de estilos */
+
+/* Reset o selector universal */
+* {
+	/* Para no tener problema con los anchos en el modelo de caja */
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Incluimos la fuente de Firefox indicada*/
+@font-face {
+	font-family: 'Fira';
+	src: url(fonts/FiraSansOT-Regular.otf) format("opentype");
+}
+
+/* Tags y clases del html */
+body {
+	margin: 1em 10%;
+	background-color: #FBFBF2;/*#F4F4B4; /* Color de fondo. Aplica a todo el body */
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.paragraph {
+	font-weight: 200;
+	position: relative;
+	float: left;
+	margin: 0.2em;
+}
+
+h2 {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #F1F0CE;
+	padding: 0.3em;
+	background-color: #FBFBF2;
+	clear:both; /* para eliminar el flotado anterior del span */
+}
+
+.local {
+	font-family: 'Fira', Verdana, serif;
+	font-weight: 400;
+	background-color: #5EEADA;
+	padding: 1%;
+	margin: 1% 0;
+}
+
+.embedded {
+	font-family: 'Nosifer', Arial, serif;
+	font-weight: 400;
+	background-color: #c4c4c4;
+	padding: 1%;
+	margin: 1% 0;
+}
