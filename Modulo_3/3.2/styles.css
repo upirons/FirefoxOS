@@ -1,0 +1,77 @@
+/*-- Práctica 2 Módulo 3: Estructura semántica HTML5. Autor: Luis Medina. Fichero: css */
+/* Fichero: Hoja de estilos */
+
+/* Reset o selector universal */
+* {
+	/* Para no tener problema con los anchos en el modelo de caja */
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Tags y clases del html */
+body {
+	margin: 1em 5%;
+	background-color: #FBFBF2; /* Color de fondo. Aplica a todo el body */
+	text-align: center;
+	line-height: 1.5em;
+}
+
+nav {
+	background-color: #37B3CF;
+	padding: 0.1em;
+}
+
+nav>ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+nav>ul>li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CEE0F1;
+	background-color: #CEE0F1;
+}
+
+h2 {
+	padding: 0.3em;
+	background-color: #FBFBF2;
+}
+
+section {
+	width: 78%;
+	float: left;
+	padding: 0.2em;
+	background-color: #C4BBBB;
+	padding: 0.2em;
+	margin: 1em 0.3em 1em 0.3em;
+	text-align: center;
+}
+
+article {
+	margin: 0.2em auto 1em;
+	padding: 0.2em 1em;
+	width: 95%;
+	background-color: #ABA5B1;
+}
+
+aside {
+	width: 20%;
+	float: right;
+	background-color: #ACE5D2;
+	margin: 1em 0;
+	padding: 0.2em;
+	display: inline-block;
+}
+
+footer {
+	clear: both;
+	background-color: #37B3CF;
+	padding: 0.1em;
+}
