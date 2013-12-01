@@ -1,0 +1,106 @@
+/*-- Práctica 3 Módulo 3: Estructura CSS. Autor: Luis Medina. Fichero: css */
+/* Fichero: Hoja de estilos */
+
+/* Reset o selector universal */
+* {
+	/* Para no tener problema con los anchos en el modelo de caja */
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Tags y clases del html */
+body {
+	margin: 1em 5%;
+	background-color: #FBFBF2; /* Color de fondo. Aplica a todo el body */
+	font-family: 'Times new roman';
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+nav {
+	background-color: #A9B0B2;
+	padding: 0.5px 1px;
+}
+
+nav>ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 5px;
+}
+
+nav>ul>li {
+	display: inline;
+	margin: 0 10px;
+	padding: 2px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CEE0F1;
+	background-color: #CEE0F1;
+}
+
+h1 {
+	line-height: 1rem;
+}
+
+section {
+	width: 86%;
+	float: left;
+	padding: 1em;
+	background-color: #A9B0B2;
+	margin: 1em 0.3em 1em 0.3em;
+	text-align: center;
+}
+
+article {
+	margin: 0;
+	padding: 0.8em;
+}
+
+aside {
+	width: 12%;
+	float: right;
+	background-color: #A9B0B2;
+	margin: 1em 0;
+	padding: 0.2em;
+}
+
+footer {
+	clear: both;
+	background-color: #A9B0B2;
+	padding: 0.1em;
+}
+
+/* Fondos - Bordes - Sombras */
+.background {
+	width: 100%;
+	height: 400px;
+	/* Fondos */
+
+	/* Imagenes: fijo abajo como si fuese tierra */
+	background: url(images/ground.png) left bottom repeat-x,
+				url(images/tree_1.png) 10% 61% no-repeat,
+				url(images/tree_2.png) 60% 61% no-repeat,
+				url(images/cloud.png) left 10% repeat-x,
+				url(images/sun.png) right top no-repeat,
+				url(images/car_1.png) 30% 75% no-repeat,
+				url(images/car_2.png) 80% 81% no-repeat;
+
+	/* Color Fondo final: */
+	background-color: #60AAF0;
+
+	/* bordes */
+	border: 4px solid #800000;
+	-moz-border-radius: 25px 25px 10px 10px;
+	-webkit-border-radius: 25px 25px 10px 10px;
+	border-radius: 25px 25px 10px 10px;
+
+	/* Sombras */
+	-moz-box-shadow: 10px 10px 7px #421B1E;
+	-webkit-box-shadow: 10px 10px 7px #421B1E;
+	box-shadow: 10px 10px 7px #421B1E;
+
+}
