@@ -1,0 +1,190 @@
+/*-- Práctica 4 Módulo 3: Menús CSS. Autor: Luis Medina. Fichero: css */
+/* Fichero: Hoja de estilos */
+
+/* Reset o selector universal */
+* {
+	/* Para no tener problema con los anchos en el modelo de caja */
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Tags y clases del html */
+body {
+	margin: 1em 5%;
+	background-image: url('images/myspace_logo.jpg');
+	font-family: "Lucida Sans","Lucida Grande",sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5rem;
+	height: 70em; /* no se debe usar, simplemente lo añado para que se vea el efecto al bajar del menú fijo */
+}
+
+h1 {
+	line-height: 1rem;
+	font-variant: small-caps;
+	margin: 15px;
+	padding: 5px;
+}
+
+h4 {
+	font-style: italic;
+}
+
+/* Menú de navegación base */
+nav {
+	width: 130px;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #FFFFFF;
+	text-align: left;
+	background-color: #313131;
+	border-radius: 0 0 2px 2px;
+	border-top: 1px solid #282828;
+	padding-bottom: 8px;
+}
+
+/* Título en el menú de navegación */
+nav>h1 {
+	min-height: 40px;
+	margin: 0;
+	padding: 15px 11px 14px;
+	font-size: 15px;
+	font-weight: 500;
+	font-variant: normal;
+	color: #FFF;
+	line-height: 18px;
+}
+
+/* Lista en el menú de navegación */
+nav>ul{
+    list-style: none outside none;
+	padding: 0;
+	margin: 0;
+    border-bottom: 1px solid #3C3C3C;
+    color: #757575;
+}
+
+/* Formato de cada item de la lista (directamente formato sobre los links, no sobre el li */
+nav ul>li>a {
+	display: block;
+	height: 27px;
+	padding: 0 10px;
+	border-top: 1px solid #3c3c3c;
+	border-bottom: 1px solid #282828;
+	line-height: 25px;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Formato de cada span dentro de cada item de la lista: centrado verticalmente */
+nav ul>li>a>span {
+	vertical-align: middle;
+	font: inherit;
+}
+
+/* Cuando una opción de la lista está seleccionada, cambiamos su situación para incluir una imagen a la derecha */
+nav ul>.selected>a {
+    position: relative;
+}
+
+/* Imagen de fondo a la derecha cuando está seleccionada una opción */
+nav ul>.selected>a:after {
+    background: none repeat scroll 0 0 #018CDD;
+    content: "";
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+}
+
+/* Opciones del menú seleccionadas o sobre las que pasamos el ratón */
+nav>ul>li.selected, nav>ul>li:hover {
+    background-color: #292929;
+    color: #FFFFFF;
+}
+
+/* Incluimos en los spam como fondo los iconos */
+.welcome {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/welcome.png);
+}
+
+.featured {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/featured.png);
+}
+
+.people {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/people.png);
+}
+
+.music {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/music.png);
+}
+
+.mixes {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/mixes.png);
+}
+
+.videos {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/videos.png);
+}
+
+.radio {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background-image: url(images/radio.png);
+}
+
+/* Div con opción para cambiar de página entre las dos prácticas */
+.container {
+	width: 20%;
+	position: fixed;
+	top: 50%;
+	left: 40%;
+}
+
+.container a {
+	font-variant: small-caps;
+}
