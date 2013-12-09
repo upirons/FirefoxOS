@@ -1,0 +1,62 @@
+/*-- Ejercicio Final Módulo 4. Autor: Luis Medina. Fichero: css */
+/* Fichero: Hoja de estilos */
+
+/* Reset o selector universal */
+* {
+	/* Para no tener problema con los anchos en el modelo de caja */
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Incluimos la fuente de Firefox */
+@font-face {
+	font-family: 'FirefoxOS';
+	src: url(../fonts/FiraSansOT-Regular.otf) format("opentype"),
+		url(../fonts/FiraSans-Regular.ttf) format("truetype"),
+		url(../fonts/FiraSans-Regular.woff) format("woff");
+}
+
+/* Tags y clases del html */
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 auto;
+	/*width: 480px;*/
+	background-color: #000000;
+	background: url('../images/bg_chess.png') center top no-repeat;
+	background-size: cover;
+	font: 10px "FirefoxOS", Helvetica, "Open Sans", sans-serif;
+}
+
+*/
+h1 {
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+
+article{
+	width: 80%;
+	margin: 4rem 10%;
+}
+
+button{
+	font-family: firefoxos;
+	font-size: 1.6rem;
+	height: 5rem;
+}
+button:hover{
+	border-color: #04b7e0;
+	background: none repeat scroll 0% 0% / auto 100% #04b7e0;
+}
+button:active{
+	border-color: #008AAA;
+	background: none repeat scroll 0% 0% / auto 100% #008AAA;
+}
